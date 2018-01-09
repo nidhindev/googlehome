@@ -55,6 +55,7 @@ app.post("/googlehome/", function(req, res) {
     res.send({
         "speech": "Please provide your pnr.",
         "displayText": "provide pnr for getting the info",
+        "contextOut":['baggage'],
         "source": "my app"
     })
 
