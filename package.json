@@ -1,0 +1,27 @@
+{
+    "name": "googlehome",
+    "version": "1.0.0",
+    "description": "for google home",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/nidhindev/googlehome.git"
+    },
+    "author": "Nidhin",
+    "license": "ISC",
+    "dependencies": {
+        "crypto": "0.0.3",
+        "querystring": "latest",
+        "request": "latest",
+        "backtick-template": "latest",
+        "express": "latest",
+        "body-parser": "latest"
+    },
+    "engines": {
+        "node": "8.1.4",
+        "npm": "lastest"
+    }
+}
