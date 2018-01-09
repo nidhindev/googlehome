@@ -52,6 +52,10 @@ app.post("/googlehome/", function(req, res) {
     headers['Proxy-Authorization'] = "Basic " + (new Buffer(proxy.auth).toString("base64"));
     //console.log('Headers', headers);
     console.log('Body \n', JSON.stringify(req.body))
-    res.sendStatus(200)
+    res.send({
+        "speech": "Please provide your pnr.",
+        "displayText": "provide pnr for getting the info",
+        "source": "my app"
+    })
 
 });
