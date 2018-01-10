@@ -55,7 +55,25 @@ app.post("/googlehome/", function(req, res) {
     res.send({
         "speech": "Please provide your pnr.",
         "displayText": "provide pnr for getting the info",
-        "contextOut":['baggage'],
+        "contextOut":[{
+			"name": "actions_capability_audio_output",
+			"parameters": {},
+			"lifespan": 0
+        },
+        {
+			"name": "baggage",
+			"parameters": {},
+			"lifespan": 0
+        },
+         {
+			"name": "google_assistant_input_type_voice",
+			"parameters": {},
+			"lifespan": 0
+		}, {
+			"name": "actions_capability_media_response_audio",
+			"parameters": {},
+			"lifespan": 0
+		}],
         "source": "my app"
     })
 
