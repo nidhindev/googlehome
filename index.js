@@ -63,7 +63,7 @@ app.post("/googlehome/", function(req, res) {
         {
 			"name": "baggage",
 			"parameters": {},
-			"lifespan": 0
+			"lifespan": 5
         },
          {
 			"name": "google_assistant_input_type_voice",
